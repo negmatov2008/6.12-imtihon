@@ -14,11 +14,15 @@ function AboutCountries({
 }) {
   return (
     <div className="felx eror flex-col max-w-full md:flex-row">
-      <img
-        className="h-[229px] md:h-[430px] md:w-[590px] inline-block w-[320px] rounded-lg mb-12"
-        src={flags}
-        alt=""
-      />
+      {flags ? (
+        <img
+          className="h-[229px] md:h-[430px] md:w-[590px] inline-block w-[320px] rounded-lg mb-12"
+          src={flags}
+          alt=""
+        />
+      ) : (
+        <div className="skeleton h-[229px] md:h-[430px] md:w-[590px] w-[320px]"></div>
+      )}
       <div className="felx flex-row max-w-[400px]">
         <h1 className="text-xl inline-block font-bold mb-8">{name}</h1>
         <div className="flex-col flex md:flex-row gap-10">

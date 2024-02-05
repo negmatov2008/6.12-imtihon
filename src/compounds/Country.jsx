@@ -5,7 +5,7 @@ function Country({ region, population, flags, name, capital }) {
     <div className="felx felx-col w-[264px] rounded-md bg-[#f8f9fa] dark:bg-[#1b263b] gap-5">
       <img className="w-full h-[160px]  rounded-t-lg" src={flags} alt="" />
       <div className="p-4">
-        <h3 className="text-[#000] text-lg font-bold mb-6 dark:text-[#fff]">
+        <h3 className="text-[#000] text-lg h-[56px] font-bold mb-6 dark:text-[#fff]">
           {name}
         </h3>
         <div className="flex flex-col gap-3">

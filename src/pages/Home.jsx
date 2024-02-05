@@ -69,7 +69,7 @@ function Home() {
         </ul>
       </details>
       <div className="flex flex-col  mx-auto  gap-10  bg-inherit  flex-wrap max-w-[264px] md:max-w-[87%]  md:gap-20 md:flex-row  md:max-full   ">
-        {currentCountry &&
+        {currentCountry ? (
           currentCountry.map((country) => (
             <Link to={"country/" + country.name.common}>
               <Country
@@ -81,7 +81,15 @@ function Home() {
                 population={country.population}
               />
             </Link>
-          ))}
+          ))
+        ) : (
+          <div class="flex mx-auto mt-4 h-screen">
+            <div class="relative">
+              <div class="h-28 w-28 rounded-full border-t-8 border-b-8 dark:border-gray-300 border-red-600"></div>
+              <div class="absolute top-0 left-0 h-28 w-28 rounded-full border-t-8 border-b-8 border-blue-700 animate-spin"></div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ function About() {
   return (
     <div className="container flex flex-col mx-auto max-w-[85%] md:max-w-[90%] ">
       <Link to={"/"}>
-        <button className="px-10 mb-20 py-2 flex items-center gap-1 dark:bg-[#1b263b] rounded text-inherit bg-[#f8f9fa]">
+        <button className="px-10 mb-20 py-2 flex items-center md:px-14 md:py-4 gap-1 dark:bg-[#1b263b] rounded text-inherit bg-[#f8f9fa]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

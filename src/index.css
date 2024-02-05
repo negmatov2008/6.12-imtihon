@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.eror{
+    display: flex;
+    gap: 90px;
+}
